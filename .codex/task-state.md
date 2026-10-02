@@ -8,4 +8,6 @@ Completed: three skill entrypoints and references authored, skill-creator valida
 
 Completed packaging: repository validation passed for metadata, links and Python syntax; all authored files scanned for credential/key signatures and reviewed before the first commit. No pre-existing private history is being published. Apache-2.0 license, contribution/security guidance and a lightweight CI validator are included.
 
-Next: create/push a fresh public zukuapp repository and verify visibility. Static/public-read validation does not establish screen-reader/runtime behavior.
+Publication completed: https://github.com/zukuapp/zuku-agent-skills is public, uses Apache-2.0, and its lightweight GitHub validation passed. Private vulnerability reporting is enabled. The first commit contains only these newly authored files; existing private repositories were not exposed.
+
+Remaining maintenance: follow current API/engine contracts as they change. Static/public-read validation does not establish screen-reader/runtime behavior.
