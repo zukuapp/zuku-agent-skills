@@ -1,0 +1,16 @@
+ZUKU API and game skills
+Copyright 2026 ZUKU contributors
+
+This repository contains newly authored integration guidance and a bounded public-read helper.
+It does not redistribute the ZUKU platform implementation, proprietary game artwork,
+or third-party Agent Skills catalogs.
+
+Primary upstream references:
+Ren'Py: https://github.com/renpy/renpy
+Phaser: https://github.com/phaserjs/phaser
+PixiJS: https://github.com/pixijs/pixijs
+Godot: https://github.com/godotengine/godot
+Ruffle: https://github.com/ruffle-rs/ruffle
+W3C accessibility/Gamepad standards: https://www.w3.org/
+
+These projects retain their respective licenses. Links do not imply endorsement.
