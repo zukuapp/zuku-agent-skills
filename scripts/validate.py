@@ -23,7 +23,7 @@ for name in sorted(skills):
 for path in root.rglob('*'):
     if not path.is_file() or '.git' in path.parts:
         continue
-    raw = path.read_text(errors='strict')
-    assert not re.search(r'(?:ghp_|github_pat_|sk_live_)[A-Za-z0-9_]{16,}', raw), 'credential-like material found'
-    assert not re.search(r'^-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----$', raw, re.M), 'private key material found'
+    raw = path.read_bytes()
+    assert not re.search(rb'(?:ghp_|github_pat_|sk_live_)[A-Za-z0-9_]{16,}', raw), 'credential-like material found'
+    assert not re.search(rb'^-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----$', raw, re.M), 'private key material found'
 print(f'Validated {checked} skills, local references, Python syntax and basic secret exclusions.')
