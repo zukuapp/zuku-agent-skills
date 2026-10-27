@@ -1,6 +1,6 @@
 # Observed public contracts
 
-Baseline checked 2026-10-02 against the ZUKU v1 docs and current implementation. Public docs: https://www.zuzunza.com/docs/api/getting-started, https://www.zuzunza.com/docs/api/contents, https://www.zuzunza.com/docs/api/media, https://www.zuzunza.com/docs/api/game-cloud.
+Baseline: ZUKU v1 docs as of 2026-10-02. Public docs: https://www.zuzunza.com/docs/api/getting-started, https://www.zuzunza.com/docs/api/contents, https://www.zuzunza.com/docs/api/media, https://www.zuzunza.com/docs/api/game-cloud.
 
 ## Envelopes and content
 

@@ -1,6 +1,6 @@
 # Primary engine references
 
-These are sources to consult for the installed version, not dependencies automatically added to a project. Examples belong to their upstream licenses; this skill contains original guidance and does not bundle engine code.
+Consult these sources for the project's installed engine version.
 
 | Engine | Repository / API | ZUKU integration concern |
 | --- | --- | --- |

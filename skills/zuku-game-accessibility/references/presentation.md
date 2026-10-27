@@ -15,7 +15,7 @@ Primary guidance: https://www.w3.org/WAI/WCAG22/quickref/ ; Ren'Py self-voicing 
 
 ## Optional transcript bridge design
 
-This is an implementation design, not a pre-existing universal ZUKU API. Give any new protocol a separate channel/version and obtain its session binding from the host export contract. A receiving host must bind messages to the current content frame. For a sandboxed opaque origin, source-frame/session validation is essential; trusting `origin === 'null'` alone is insufficient.
+ZUKU provides no built-in transcript bridge; the bridge is a new protocol implemented in the game export and host. Give the protocol a separate channel/version and obtain its session binding from the host export contract. A receiving host must bind messages to the current content frame. For a sandboxed opaque origin, source-frame/session validation is essential; trusting `origin === 'null'` alone is insufficient.
 
 Choose finite speaker/line/scene lengths, a finite number of actions, message-rate limits, and bounded transcript history. Discard stale messages after iframe replacement. Render text with `textContent` and never accept HTML/script/URL commands from dialogue. Use a polite live region for a completed line, with an option to disable announcements. Avoid replaying long history automatically; expose history behind a named user action.
 

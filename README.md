@@ -20,15 +20,13 @@
 
 ## Overview
 
-This repository contains original Agent Skills for the ZUKU public HTTP API and for JUMP game presentation across screens, input methods and assistive technology. The skills document the content, package and Game Cloud boundaries. They link to primary Ren'Py, Phaser, PixiJS, Godot and Ruffle references.
+This repository contains original Agent Skills for the ZUKU public HTTP API and for JUMP game presentation across screens, input methods and assistive technology.
 
 | Skill | Use |
 | --- | --- |
 | [zuku-public-api](skills/zuku-public-api/SKILL.md) | Public v1 content reads, response/error handling, package manifests, content-scoped Cloud contracts |
-| [zuku-game-integration](skills/zuku-game-integration/SKILL.md) | Engine exports, relative assets, sandbox playback, package versus publication evidence |
+| [zuku-game-integration](skills/zuku-game-integration/SKILL.md) | Ren'Py, Phaser, PixiJS, Godot and Ruffle exports, relative assets, sandbox playback, package versus publication evidence |
 | [zuku-game-accessibility](skills/zuku-game-accessibility/SKILL.md) | Responsive presentation, readable text, keyboard/touch controls, reduced motion, semantic transcript design |
-
-The skills contain no deployment credentials, private infrastructure configuration or game source/artwork. Installing a skill does not authorize uploads, payments or publication.
 
 ## Requirements
 
@@ -48,17 +46,15 @@ The skills contain no deployment credentials, private infrastructure configurati
 
 ## Usage
 
-The agent reads only the skill and references relevant to the task.
-
-The following command reads a public game record without credentials or mutations:
+The following command reads one public game record and needs no credentials:
 
 ```sh
 python3 skills/zuku-public-api/scripts/check_public_content.py cnt_e03f90d34e1a4fd59c55f5582948af1d
 ```
 
-Output shape: `{"status":200,"id":"cnt_...","category":"jump","type":"game","title":"..."}`. The command covers a public metadata read only. It does not test game runtime, authenticated writes or owner access.
+Output shape: `{"status":200,"id":"cnt_...","category":"jump","type":"game","title":"..."}`.
 
-API reference: [ZUKU API docs](https://www.zuzunza.com/docs/api). The contract baseline is 2026-10-02. Live docs and the project's pinned engine version take precedence over the examples.
+API reference: [ZUKU API docs](https://www.zuzunza.com/docs/api). Live docs and the project's pinned engine version take precedence over the examples.
 
 ## Contribute
 
@@ -70,4 +66,4 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-Original skills and helper code are licensed under Apache-2.0. Upstream engines, third-party installed skills, game artwork and ZUKU platform implementation retain their own licenses and are not included here. See [NOTICE](NOTICE).
+Original skills and helper code are licensed under Apache-2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
